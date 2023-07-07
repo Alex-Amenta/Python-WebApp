@@ -1,0 +1,130 @@
+{% extends "layout.html" %} {% block content %}
+<article>
+  <h1 class="text-center mb-5">
+    <span class="highlight-1">Condicionales</span>
+  </h1>
+  <p>
+    Los condicionales en Python te permiten tomar decisiones en función de una
+    condición específica. Puedes controlar el flujo de tu programa y ejecutar
+    diferentes bloques de código según se cumplan o no ciertas condiciones. A
+    continuación, te explico cómo funcionan los condicionales en Python con
+    ejemplos:
+  </p>
+
+  <section>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Estructura básica del condicional 'if':</span>
+    </h2>
+    <p>
+      El condicional <b>'if'</b> se utiliza para ejecutar un bloque de código si
+      una condición es verdadera. La estructura básica es la siguiente:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      if condicion:
+        <span class="text-success"># Bloque de código a ejecutar si la condición es verdadera</span>        
+      </code>
+    </pre>
+    <p>Hagamos un ejemplo incluyendo operadores de comparación:</p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      edad = 20
+
+      if edad >= 18:
+          print("Eres mayor de edad")        
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, si la variable edad es mayor o igual a 18, se imprimirá
+      el mensaje "Eres mayor de edad".
+    </p>
+  </section>
+
+  <section>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Condicionales if-else:</span>
+    </h2>
+    <p>
+      Puedes utilizar el condicional <b>'else'</b> para ejecutar un bloque de
+      código alternativo cuando la condición del <b>'if'</b> sea falsa. La
+      estructura es la siguiente:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      if condicion:
+        <span class="text-success"># Bloque de código a ejecutar si la condición es verdadera</span>
+      else:
+        <span class="text-success"># Bloque de código a ejecutar si la condición es falsa</span>          
+      </code>
+      </pre>
+    <p>Hagamos un ejemplo tomando de referencia el ejemplo anterior:</p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      edad = 15
+
+      if edad >= 18:
+        print("Eres mayor de edad")
+      else:
+        print("Eres menor de edad")
+      </code>
+        </pre>
+    <p>
+      En este ejemplo, si la variable <b>'edad'</b> es mayor o igual a 18, se
+      imprime "Eres mayor de edad". De lo contrario, se imprime "Eres menor de
+      edad".
+    </p>
+  </section>
+
+  <section>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Condicionales if-elif-else:</span>
+    </h2>
+    <p>
+      Puedes utilizar múltiples condicionales <b>'elif'</b> (abreviatura de
+      "else if") para evaluar condiciones adicionales en secuencia y ejecutar el
+      bloque de código correspondiente a la primera condición que sea verdadera.
+      La estructura es la siguiente:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      if condicion1:
+        <span class="text-success"># Bloque de código a ejecutar si la condicion1 es verdadera</span>
+      elif condicion2:
+        <span class="text-success"># Bloque de código a ejecutar si la condicion2 es verdadera</span>
+      else:
+        <span class="text-success"># Bloque de código a ejecutar si ninguna de las condiciones anteriores es verdadera</span>
+      </code>
+        </pre>
+    <p>Hagamos un ejemplo:</p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      hora = 14
+  
+      if hora < 12:
+          print("Buenos días")
+      elif hora < 18:
+          print("Buenas tardes")
+      else:
+          print("Buenas noches")
+      </code>
+      </pre>
+    <p>
+      En este ejemplo, si la variable <b>'hora'</b> es menor que 12, se imprime
+      "Buenos días". Si es mayor o igual a 12 pero menor que 18, se imprime
+      "Buenas tardes". De lo contrario, se imprime "Buenas noches".
+    </p>
+  </section>
+  <p class="mt-5 py-4">
+    <b
+      >💡 Los condicionales te permiten tomar decisiones y controlar el flujo de
+      ejecución de tu programa en función de condiciones específicas. Puedes
+      combinar condicionales, utilizar operadores lógicos y comparaciones para
+      crear condiciones más complejas. Estos son solo ejemplos básicos, pero los
+      condicionales en Python son muy flexibles y te permiten construir
+      estructuras de control más sofisticadas para adaptarsea tus
+      necesidades.</b
+    >
+  </p>
+</article>
+
+{% endblock %}

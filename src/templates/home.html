@@ -1,0 +1,310 @@
+{% extends "layout.html" %} {% block content %}
+<center class="my-5">
+  <img
+    id="img_python"
+    src="https://soka.gitlab.io/blog/post/2022-07-19-python-vars-intro-numbers/img/Python_logo-01.png"
+    alt=""
+    style="width: 70%"
+  />
+</center>
+<hr class="text-warning" />
+<section class="mt-5">
+  <h1 class="text-center mb-4">
+    <span class="highlight-1">Aprende Python Tutorial gratis</span>
+  </h1>
+  <h2 class="mb-4 mt-5"><span class="highlight-2">¿Qué es Python?</span></h2>
+  <p>
+    Python es un lenguaje de programación de alto nivel, interpretado y de
+    propósito general. Fue creado por Guido van Rossum en la década de 1990 y se
+    ha vuelto muy popular debido a su sintaxis clara y legible.
+  </p>
+  <p>
+    Python se destaca por su enfoque en la legibilidad del código, lo que lo
+    hace <b>ideal para principiantes</b> en programación. Es un lenguaje
+    multiparadigma, lo que significa que admite múltiples estilos de
+    programación, incluyendo programación orientada a objetos, programación
+    imperativa y programación funcional.
+  </p>
+  <p>
+    Además, Python es <b>multiplataforma</b>, lo que significa que los programas
+    escritos en Python pueden ejecutarse en diferentes sistemas operativos sin
+    necesidad de modificaciones significativas. Esto lo hace muy versátil y
+    adaptable a diversas aplicaciones.
+  </p>
+  <p>
+    En resumen, Python es un lenguaje de programación potente, fácil de aprender
+    y utilizar, con una amplia gama de aplicaciones en áreas como desarrollo
+    web, análisis de datos, inteligencia artificial, automatización y más.
+  </p>
+</section>
+
+<section class="mt-5">
+  <h2 class="mb-4">
+    <span class="highlight-2">Casos de usos comunes de Python</span>
+  </h2>
+  <ul class="emoji-idea">
+    <li>
+      <b>Desarrollo web:</b> Python es utilizado en el desarrollo web para crear
+      aplicaciones y sitios web. Frameworks populares como Django y Flask
+      facilitan la creación de aplicaciones web robustas y escalables utilizando
+      Python.
+    </li>
+    <li>
+      <b>Análisis de datos y ciencia de datos:</b> Python es ampliamente
+      utilizado en el análisis de datos y la ciencia de datos. Bibliotecas como
+      NumPy, pandas y matplotlib proporcionan herramientas poderosas para el
+      procesamiento, análisis y visualización de datos.
+    </li>
+    <li>
+      <b>Automatización y scripting:</b> Python es ideal para automatizar tareas
+      repetitivas y realizar scripting. Puedes escribir scripts Python para
+      automatizar procesos de rutina, interactuar con archivos y directorios,
+      realizar tareas de extracción de datos, entre otros.
+    </li>
+    <li>
+      <b>Inteligencia artificial y aprendizaje automático:</b> Python se ha
+      convertido en uno de los lenguajes más populares para proyectos de
+      inteligencia artificial y aprendizaje automático. Bibliotecas como
+      TensorFlow, Keras, PyTorch y scikit-learn proporcionan herramientas para
+      desarrollar modelos de aprendizaje automático y redes neuronales.
+    </li>
+    <li>
+      <b>Desarrollo de juegos:</b> Python se utiliza en el desarrollo de juegos
+      gracias a bibliotecas como Pygame, que facilita la creación de juegos 2D.
+      Python también se utiliza para el desarrollo de herramientas y scripts
+      relacionados con los juegos.
+    </li>
+    <li>
+      <b>Automatización de tareas administrativas:</b> Python es útil para
+      automatizar tareas administrativas, como el procesamiento y análisis de
+      archivos, el envío automatizado de correos electrónicos, la generación de
+      informes, la manipulación de datos en hojas de cálculo, entre otros.
+    </li>
+    <li>
+      <b>Aplicaciones de servidor:</b> Python es utilizado para construir
+      aplicaciones de servidor, como servicios web, APIs y microservicios.
+      Frameworks como Flask y FastAPI permiten el desarrollo rápido y eficiente
+      de aplicaciones de servidor en Python.
+    </li>
+    <li>
+      <b>Desarrollo de aplicaciones de escritorio:</b> Python se puede utilizar
+      para crear aplicaciones de escritorio mediante el uso de bibliotecas como
+      PyQt y tkinter. Estas bibliotecas permiten crear interfaces gráficas de
+      usuario (GUI) interactivas.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h1 class="text-center my-5 pt-5">
+    <span class="highlight-1">Instalación de Python</span>
+  </h1>
+  <h2 class="mt-4 mb-4"><span class="highlight-2">Para Windows</span></h2>
+  <ol>
+    <li>
+      Ve al sitio web oficial de Python (<a
+        class="text-decoration-none"
+        href="https://www.python.org/downloads/"
+        target="_blank"
+        >python.org</a
+      >) y ve a la sección de descargas.
+    </li>
+    <li>
+      Descarga el instalador de Python correspondiente a tu versión de Windows
+      (32 bits o 64 bits).
+    </li>
+    <li>
+      Ejecuta el archivo descargado y selecciona la opción "Agregar Python al
+      PATH" durante el proceso de instalación.
+    </li>
+    <li>Sigue las instrucciones del instalador y completa la instalación.</li>
+    <li>
+      Abre el símbolo del sistema (Command Prompt) o PowerShell y ejecuta el
+      comando <code class="codigo">python --version</code> para verificar que
+      Python se haya instalado correctamente.
+    </li>
+  </ol>
+
+  <h2 class="mt-4 mb-4"><span class="highlight-2">Para macOS</span></h2>
+  <ol>
+    <li>
+      Ve al sitio web oficial de Python (<a
+        class="text-decoration-none"
+        href="https://www.python.org/downloads/"
+        target="_blank"
+        >python.org</a
+      >) y ve a la sección de descargas.
+    </li>
+    <li>Descarga el instalador de Python correspondiente a macOS.</li>
+    <li>
+      Ejecuta el archivo descargado y sigue las instrucciones del instalador.
+    </li>
+    <li>
+      Abre la Terminal y ejecuta el comando
+      <code class="codigo">python --version</code> para verificar que Python se
+      haya instalado correctamente.
+    </li>
+  </ol>
+  <p class="mt-5">
+    💡 Podríamos utilizar un editor de código para hacer proyectos. Un editor de
+    código es una herramienta útil para desarrollar proyectos en Python, pero no
+    es estrictamente necesario para instalar el intérprete de Python y comenzar
+    a escribir programas básicos. <br />
+    Te dejo el que la mayoria usa y el que yo recomiendo
+    <a
+      class="text-decoration-none"
+      href="https://code.visualstudio.com/download"
+      target="_blank"
+      >Visual Studio Code</a
+    >.
+  </p>
+</section>
+
+<section>
+  <h1 class="text-center my-5 pt-5">
+    <span class="highlight-1">¡Hola, mundo! con Python</span>
+  </h1>
+  <p>
+    La instalación de Python incluye un IDE (un programa en donde escribir el
+    código) llamado <b>IDLE</b>, muy básico, pero que nos será útil en nuestros
+    primeros pasos en el lenguaje. Si ya tienes tu editor de código favorito
+    también puedes usarlo.
+  </p>
+  <p>
+    Para crear nuestro primer programa vamos a abrir IDLE y seleccionar el menú
+    <b>File > New File</b> para crear un nuevo documento. Luego, escribiremos lo
+    siguiente.
+  </p>
+  <kbd class="print"
+    >print<span class="text-white">(</span
+    ><span class="hola_mundo">"¡Hola, mundo!"</span
+    ><span class="text-white">)</span></kbd
+  >
+  <p class="mt-3">
+    Este es un auténtico código de Python. ¡Solo una línea! En ella llamamos a
+    la función incorporada <code class="codigo">print()</code> y le pasamos una
+    cadena de caracteres como argumento para que imprima en la pantalla. Se dice
+    que es incorporada ya que es una herramienta que el lenguaje nos pone
+    siempre a disposición en nuestros programas. Existen muchas otras que iremos
+    conociendo en el camino.
+  </p>
+  <p>
+    También podemos ejecutarlo en nuestro editor de código creando un archivo
+    "index.py" o puede ser cualquier nombre siempre y cuando termine con
+    <b>.py</b> y escribimos el mismo código que antes:
+  </p>
+  <kbd class="print"
+    >print<span class="text-white">(</span
+    ><span class="hola_mundo">"¡Hola, mundo!"</span
+    ><span class="text-white">)</span></kbd
+  >
+  <p class="mt-3">
+    Para ejecutarlo presionamos F5 y nos mostrará el código ejecutado en la
+    terminal del editor de código.
+  </p>
+
+  <img
+    src="https://miro.medium.com/v2/resize:fit:828/1*yFhSKqQi3iFUotQBECoq5A.gif"
+    alt="presentacion"
+    style="width: 700"
+    height="504"
+    loading="lazy"
+    role="presentation"
+    class="my-4 mx-auto shadow"
+  />
+  <p class="fw-bold pt-4">
+    💡Aquí te dejo las mejores extensiones de VSCode para Python
+    <a
+      class="text-decoration-none"
+      href="https://www.datasource.ai/es/data-science-articles/las-10-mejores-extensiones-de-python-para-visual-studio-code"
+      target="_blank"
+      rel="noopener noreferrer"
+      >extensionesVSCode</a
+    >
+  </p>
+</section>
+
+<!-- Cards -->
+<h1 class="text-center my-5 pt-5">
+  <span class="highlight-1">Más Información</span>
+</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5 text-center">
+  <div class="col">
+    <div class="card h-100 shadow">
+      <img
+        src="https://global-uploads.webflow.com/5f5a53e153805db840dae2db/645ba061fd8edc8b1ea5d3d8_variables-python.png"
+        class="card-img-top"
+        alt="variable"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Variables y tipos de datos</h5>
+        <p class="card-text">
+          En Python, las variables se utilizan para almacenar valores. Pueden
+          ser de diferentes tipos de datos, como números, cadenas y booleanos.
+          El tipo de datos de una variable se determina automáticamente en
+          función del valor que se le asigna.
+        </p>
+        <a href="/variables" class="btn btn-primary mb-4">Leer más...</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow">
+      <img
+        src="https://global-uploads.webflow.com/5f5a53e153805db840dae2db/645ba086ab5302d9111f23f7_operadores-expresiones-python.png"
+        class="card-img-top h-50"
+        alt="operadores"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Operadores</h5>
+        <p class="card-text">
+          Los operadores son símbolos o palabras reservadas que se utilizan en
+          programación para realizar operaciones en datos y variables. Los
+          operadores permiten combinar, comparar o manipular valores y
+          expresiones, y son fundamentales para realizar cálculos, evaluar
+          condiciones y controlar el flujo de un programa.
+        </p>
+        <a href="/operadores" class="btn btn-primary mb-4">Leer más...</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow">
+      <img
+        src="https://i.stack.imgur.com/XBKfI.png"
+        class="card-img-top"
+        alt="condicionales"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Condicionales</h5>
+        <p class="card-text">
+          Los condicionales son estructuras de control en programación que
+          permiten tomar decisiones basadas en condiciones específicas. Estas
+          condiciones se evalúan y, según su resultado, se ejecuta un bloque de
+          código o se salta a otro bloque.
+        </p>
+        <a href="/condicionales" class="btn btn-primary">Leer más...</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow mt-5">
+      <img
+        src="https://global-uploads.webflow.com/5f5a53e153805db840dae2db/645ba09cab5302bbcc1f2436_python-funcion.png"
+        class="card-img-top"
+        alt="funciones"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Funciones</h5>
+        <p class="card-text">
+          Las funciones son bloques de código que se pueden reutilizar en
+          diferentes partes de un programa. En Python, las funciones se definen
+          con la palabra clave “def”.
+        </p>
+        <a href="/funciones" class="btn btn-primary">Leer más...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

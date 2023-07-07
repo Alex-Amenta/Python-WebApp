@@ -1,0 +1,183 @@
+{% extends "layout.html" %} {% block content %}
+<article>
+  <h1 class="text-center mb-5">
+    <span class="highlight-1">Operadores</span>
+  </h1>
+  <p>
+    Los operadores en Python son símbolos especiales que se utilizan para
+    realizar operaciones en variables y valores. Permiten realizar cálculos
+    matemáticos, comparaciones y combinaciones lógicas. A continuación, te
+    explicaré los principales operadores en Python:
+  </p>
+
+  <section>
+    <h2 class="my-5">
+      <span class="highlight-2">Operadores Aritméticos:</span>
+    </h2>
+    <div class="op_container">
+      <ul class="op_lista">
+        <li><kbd class="fw-bold">+</kbd> : Suma dos valores.</li>
+        <li><kbd class="fw-bold">-</kbd> : Resta un valor de otro.</li>
+        <li><kbd class="fw-bold">*</kbd> : Multiplica dos valores.</li>
+        <li>
+          <kbd class="fw-bold">/</kbd> : Divide un valor por otro (resultado
+          como flotante).
+        </li>
+        <li>
+          <kbd class="fw-bold">//</kbd> : Divide un valor por otro y redondea el
+          resultado al entero inferior.
+        </li>
+        <li>
+          <kbd class="fw-bold">%</kbd> : Devuelve el resto de una división
+          entera.
+        </li>
+        <li>
+          <kbd class="fw-bold">**</kbd> : Calcula la potencia de un valor.
+        </li>
+      </ul>
+      <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+            <code class="bg-dark text-white p-0">
+            a = 10
+            b = 3
+                
+            suma = a + b  <span class="text-success"># 13</span>
+            resta = a - b  <span class="text-success"># 7</span>
+            multiplicacion = a * b  <span class="text-success"># 30</span>
+            division = a / b  <span class="text-success"># 3.3333...</span>
+            division_entera = a // b  <span class="text-success"># 3</span>
+            resto = a % b  <span class="text-success"># 1</span>
+            potencia = a ** b  <span class="text-success"># 1000</span>
+            </code>
+            </pre>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="my-5">
+      <span class="highlight-2">Operadores de Comparación:</span>
+    </h2>
+    <div class="op_container">
+      <ul class="op_lista">
+        <li>
+          <kbd class="fw-bold">==</kbd> : Comprueba si dos valores son iguales.
+        </li>
+        <li>
+          <kbd class="fw-bold">!=</kbd> : Comprueba si dos valores son
+          diferentes.
+        </li>
+        <li>
+          <kbd class="fw-bold"><</kbd> : Comprueba si un valor es menor que
+          otro.
+        </li>
+        <li>
+          <kbd class="fw-bold">></kbd> : Comprueba si un valor es mayor que
+          otro.
+        </li>
+        <li>
+          <kbd class="fw-bold"><=</kbd> : Comprueba si un valor es menor o igual
+          que otro.
+        </li>
+        <li>
+          <kbd>>=</kbd> : Comprueba si un valor es mayor o igual que otro.
+          <br />
+          <span class="mx-auto">Estos operadores devuelven un valor booleano (True o False)</span>
+        </li>
+      </ul>
+      <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+            <code class="bg-dark text-white p-0">
+            a = 5
+            b = 10
+                
+            igual = a == b  <span class="text-success"># False</span>
+            diferente = a != b  <span class="text-success"># True</span>
+            menor = a < b  <span class="text-success"># True</span>
+            mayor = a > b  <span class="text-success"># False</span>
+            menor_o_igual = a <= b  <span class="text-success"># True</span>
+            mayor_o_igual = a >= b  <span class="text-success"># False</span>    
+            </code>
+            </pre>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="my-5">
+      <span class="highlight-2">Operadores Lógicos:</span>
+    </h2>
+    <p class="mb-4">
+      📌 Estos operadores se utilizan para combinar o invertir condiciones
+      lógicas.
+    </p>
+    <div class="op_container">
+      <ul class="op_lista">
+        <li><kbd>and</kbd> : Devuelve True si ambas condiciones son verdaderas.</li>
+        <li>
+          <kbd>or</kbd>: Devuelve True si al menos una de las condiciones es
+          verdadera.
+        </li>
+        <li><kbd>not</kbd> : Niega el valor de una condición.</li>
+      </ul>
+      <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+            <code class="bg-dark text-white p-0">
+            a = True
+            b = False
+                
+            resultado_and = a and b  <span class="text-success"># False</span>
+            resultado_or = a or b  <span class="text-success"># True</span>
+            resultado_not = not a  <span class="text-success"># False</span>
+            </code>
+            </pre>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="my-5">
+      <span class="highlight-2">Operadores de Asignación:</span>
+    </h2>
+    <p class="mb-4">
+      📌 Estos operadores se utilizan para asignar valores a variables y
+      actualizar su contenido de forma abreviada.
+    </p>
+    <div class="op_container">
+      <ul class="op_lista">
+        <li><kbd class="fw-bold">=</kbd> : Asigna un valor a una variable.</li>
+        <li>
+          <kbd class="fw-bold">+=</kbd> : Incrementa el valor de una variable y
+          lo asigna.
+        </li>
+        <li>
+          <kbd class="fw-bold">-=</kbd> : Decrementa el valor de una variable y
+          lo asigna.
+        </li>
+        <li>
+          <kbd class="fw-bold">*=</kbd> : Multiplica el valor de una variable
+          por otro y lo asigna.
+        </li>
+        <li>
+          <kbd class="fw-bold">/=</kbd> : Divide el valor de una variable por
+          otro y lo asigna.
+        </li>
+      </ul>
+      <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+          <code class="bg-dark text-white p-0">
+              x = 5
+              x += 3  <span class="text-success"># Equivalente a x = x + 3, x ahora es 8</span>
+              x -= 2  <span class="text-success"># Equivalente a x = x - 2, x ahora es 6</span>
+              x *= 4  <span class="text-success"># Equivalente a x = x * 4, x ahora es 24</span>
+              x /= 6  <span class="text-success"># Equivalente a x = x / 6, x ahora es 4.0</span>    
+            </code>
+        </pre>
+    </div>
+  </section>
+
+  <p class="mt-5 py-4">
+    <b
+      >💡 Estos son solo algunos ejemplos de los operadores en Python. Los
+      operadores son fundamentales para realizar diversas operaciones en Python,
+      como cálculos matemáticos, comparaciones, asignaciones y combinaciones
+      lógicas. Puedes utilizarlos de manera individual o combinada según tus
+      necesidades en tu programa.</b
+    >
+  </p>
+</article>
+
+{% endblock %}

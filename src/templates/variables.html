@@ -1,0 +1,170 @@
+{% extends "layout.html" %} {% block content %}
+<article>
+  <h1 class="text-center mb-5">
+    <span class="highlight-1">Variables y tipos de datos</span>
+  </h1>
+  <p>Las variables permiten almacenar y manipular datos de manera dinámica durante la ejecución de un programa. Proporcionan flexibilidad y reutilización de código al permitirnos trabajar con valores variables y cambiarlos según sea necesario.</p>
+  <p>En Python, no es necesario declarar explícitamente el tipo de variable, ya que el tipo se infiere automáticamente según el valor asignado. Esto hace que trabajar con variables en Python sea bastante sencillo y flexible.</p>
+  <p>Veamos un ejemplo escribiendo en pantalla un <samp>"Hola, mundo"</samp> :
+  </p>
+  <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow mb-4">
+    <code class="bg-dark text-white p-0">
+    mensaje = "Hola, Mundo"
+    print(mensaje)</code>
+    </pre>
+    <p>
+        💡 En Python, los nombres de las variables deben seguir ciertas reglas y convenciones. Aquí tienes algunas pautas a tener en cuenta al elegir nombres para tus variables:
+        <ol>
+            <li>Los nombres de las variables deben ser descriptivos y significativos para que puedan comunicar claramente el propósito o contenido de la variable.</li>
+            <li>Los nombres de las variables deben comenzar con una letra (a-z, A-Z) o un guion bajo (_) y no pueden comenzar con un número.</li>
+            <li>Puedes usar letras, números y guiones bajos en los nombres de las variables. Evita el uso de caracteres especiales como espacios, signos de puntuación o símbolos</li>
+            <li>Los nombres de las variables distinguen entre mayúsculas y minúsculas. Por ejemplo,<b>'nombre'</b> y <b>'Nombre'</b> se consideran dos variables diferentes.</li>
+            <li>Evita utilizar palabras reservadas de Python como nombres de variables, ya que estas palabras tienen un significado especial en el lenguaje. Algunos ejemplos de palabras reservadas son <b>if, for, while, def, class</b>, entre otros.</li>
+            <li>Intenta seguir las convenciones de estilo de Python, como el estilo snake_case, donde las palabras se separan por guiones bajos. Por ejemplo,<b> 'nombre_completo', 'saldo_cuenta', 'numero_telefono'</b>.</li>
+            <li>Si deseas utilizar un nombre compuesto para una variable, puedes utilizar letras mayúsculas en la primera letra de cada palabra después de la primera. Esta convención se conoce como CamelCase. Por ejemplo,<b> 'nombreCompleto', 'saldoCuenta', 'numeroTelefono'</b>.</li>
+        </ol> 
+    </p>
+</article>
+
+<article class="mt-5 mb-5">
+    <h2 class="mb-4">
+        <span class="highlight-2">Tipos de datos</span>
+      </h2>
+    <p>
+        En Python, existen varios tipos de datos incorporados que puedes utilizar para almacenar diferentes tipos de información. A continuación se presentan algunos de los tipos de datos más comunes en Python:
+        <ul class="fw-bold">
+            <li>Enteros (int)</li>
+            <li>Flotantes (float)</li>
+            <li>Complejos (complex)</li>
+            <li>Cadenas de texto (str)</li>
+            <li>Booleanos (bool)</li>
+            <li>Listas (list)</li>
+            <li>Tuplas (tuple)</li>
+            <li>Conjuntos (set).</li>
+            <li>Diccionarios (dict)</li>
+        </ul>
+    </p>
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Enteros</span>
+        </h4>
+        <p>Los enteros representan números enteros sin parte decimal. Pueden ser positivos o negativos. 
+        Ejemplo:
+        </p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        x = 5
+        y = -10
+        z = 0</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Flotantes</span>
+        </h4>
+        <p>Los flotantes representan números decimales o de punto flotante. Pueden contener una parte decimal y una parte fraccionaria.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        pi = 3.1416
+        temperatura = -2.5
+        salario = 2500.50</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Complejos</span>
+        </h4>
+        <p>Los números complejos tienen una parte real y una parte imaginaria. Se indican utilizando la letra "j" para representar la parte imaginaria.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        complex1 = 2 + 3j
+        complex2 = -1 - 2j</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Cadenas de texto</span>
+        </h4>
+        <p>Las cadenas de texto representan secuencias de caracteres. Se pueden definir utilizando comillas simples ('') o dobles ("").
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        mensaje = 'Hola, Mundo!'
+        nombre = "Alex"</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Booleanos</span>
+        </h4>
+        <p>Los booleanos representan los valores de verdad. Pueden ser Verdadero (<b>'True'</b>) o Falso (<b>'False'</b>). Se utilizan en expresiones lógicas y de control de flujo.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        es_mayor_edad = True
+        activado = False</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Listas</span>
+        </h4>
+        <p>Las listas son colecciones ordenadas y modificables de elementos. Pueden contener elementos de diferentes tipos.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        numeros = [1, 2, 3, 4, 5]
+        nombres = ['Juan', 'María', 'Pedro']
+        mixto = [10, 'Hola', True, 3.14]</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Tuplas</span>
+        </h4>
+        <p>Las tuplas son colecciones ordenadas e inmutables de elementos. No se pueden modificar una vez creadas.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        coordenadas = (3, 4)
+        colores = ('rojo', 'verde', 'azul')</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Conjuntos</span>
+        </h4>
+        <p>Los conjuntos son colecciones no ordenadas de elementos únicos. No permiten elementos duplicados.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        numeros = {1, 2, 3, 4, 5}
+        letras = {'a', 'b', 'c'}</code>
+        </pre>
+    </div>
+
+    <div class="mb-5">
+        <h4 class="mb-2">
+            <span class="highlight-2">Diccionarios</span>
+        </h4>
+        <p>Los diccionarios son colecciones de pares clave-valor. Cada elemento en un diccionario consiste en una clave y un valor asociado.
+        Ejemplo:</p>
+        <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+        <code class="bg-dark text-white p-0">
+        persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
+        estudiante = {"nombre": "María", "edad": 18, "ciudad": "Barcelona"}</code>
+        </pre>
+    </div>
+    <p><b>💡 Estos son solo ejemplos básicos de cómo se pueden utilizar los diferentes tipos de datos en Python. Recuerda que Python es un lenguaje flexible y dinámico, lo que significa que puedesutilizar y combinar estos tipos de datos de diversas formas para adaptarse a tus necesidades en la programación.</b></p>
+</article>
+
+{% endblock %}

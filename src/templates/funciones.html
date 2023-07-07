@@ -1,0 +1,232 @@
+{% extends "layout.html" %} {% block content %}
+<article>
+  <h1 class="text-center mb-5">
+    <span class="highlight-1">Funciones</span>
+  </h1>
+  <p>
+    En Python, las funciones son bloques de código reutilizables que realizan
+    una tarea específica. Permiten dividir el código en partes más pequeñas y
+    lógicas, lo que facilita su mantenimiento y reutilización. A continuación,
+    te explico cómo funcionan las funciones en Python con ejemplos:
+  </p>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Definición de una función:</span>
+    </h2>
+    <p>
+      Para definir una función en Python, se utiliza la palabra clave
+      <b>'def'</b>, seguida del nombre de la función y paréntesis que pueden
+      contener los parámetros de la función. La estructura básica es la
+      siguiente:
+    </p>
+    <pre class="py-1 bg-dark text-start w-75 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def nombre_funcion(parametros):
+        <span class="text-success"># Bloque de código de la función</span>
+        <span class="text-success"># Pueden incluir instrucciones, cálculos, llamadas a otras funciones, etc.</span>        
+        </code>
+    </pre>
+    <p>Ejemplo:</p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def saludar():
+        print("Hola, ¡bienvenido!")
+    
+      def sumar(a, b):
+        resultado = a + b
+        return resultado
+      </code>
+    </pre>
+    <p>
+      En el ejemplo anterior, se definen dos funciones. La función
+      <b>'saludar()'</b> no toma ningún parámetro y simplemente imprime un
+      mensaje. La función <b>'sumar(a, b)'</b> toma dos parámetros <b>'a'</b> y
+      <b>'b'</b>, realiza la suma y devuelve el resultado.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Llamada a una función:</span>
+    </h2>
+    <p>
+      Para utilizar una función, se realiza una llamada a la función utilizando
+      su nombre y pasando los valores de los argumentos correspondientes, si los
+      tiene. La estructura es la siguiente:
+    </p>
+    <pre class="py-1 bg-dark text-start w-25 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      nombre_funcion(argumentos)
+      </code>
+    </pre>
+    <p>Ejemplo:</p>
+    <pre class="py-1 bg-dark text-start w-75 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      saludar()  <span class="text-success"># Llamada a la función saludar()</span>
+
+      resultado = sumar(5, 3)  <span class="text-success"># Llamada a la función sumar() y asignación del resultado</span>
+      print(resultado)  <span class="text-success"># Imprime el resultado de la función sumar()</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, se llama a la función <b>'saludar()'</b> para imprimir el
+      mensaje "Hola, ¡bienvenido!". Luego, se llama a la función
+      <b>'sumar(5, 3)'</b> y se asigna el resultado a la variable
+      <b>'resultado'</b>. Finalmente, se imprime el valor de <b>'resultado'</b>.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Retorno de valores:</span>
+    </h2>
+    <p>
+      Una función puede devolver un valor utilizando la instrucción return. Esto
+      permite utilizar el resultado de la función en otras partes del programa.
+      Si no se especifica return, la función devuelve None de forma implícita. <br>Ejemplo:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def multiplicar(a, b):
+      resultado = a * b
+      return resultado
+    
+      resultado = multiplicar(4, 6)
+      print(resultado)  <span class="text-success"># Imprime el resultado de la función multiplicar()</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, la función <b>'multiplicar(a, b)'</b> toma dos parámetros
+      y devuelve el resultado de la multiplicación. Luego, se llama a la función
+      <b>'multiplicar(4, 6)'</b> y se asigna el resultado a la variable
+      <b>'resultado'</b>. Finalmente, se imprime el valor de <b>'resultado'</b>.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Parámetros de funciones:</span>
+    </h2>
+    <p>
+      Una función puede aceptar parámetros, que son valores que se pasan a la
+      función al llamarla. Los parámetros son variables locales dentro de la
+      función y se utilizan para realizar operaciones en función de los valores
+      que se les pasen. <br>Ejemplo:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def saludar(nombre):
+      print("Hola,", nombre)
+    
+      saludar("Juan")  <span class="text-success"># Llamada a la función saludar() con el argumento "Juan"</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, la función <b>'saludar(nombre)'</b> tiene un parámetro
+      <b>'nombre'</b>. Al llamar a la función <b>'saludar("Juan")'</b>, se pasa
+      el valor "Juan" como argumento y se imprime "Hola, Juan".
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Valores de retorno múltiple:</span>
+    </h2>
+    <p>
+      Una función puede devolver múltiples valores utilizando la instrucción
+      <b>'return'</b> seguida de los valores separados por comas. Esto permite
+      que la función devuelva varios resultados, que se pueden asignar a
+      variables individuales o utilizar en otras operaciones. <br>Ejemplo:
+    </p>
+    <pre class="py-1 bg-dark text-start w-75 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def dividir(a, b):
+        cociente = a // b
+        resto = a % b
+        return cociente, resto
+    
+      resultado_cociente, resultado_resto = dividir(10, 3)
+      print(resultado_cociente)  <span class="text-success"># Imprime el cociente devuelto por la función dividir()</span>
+      print(resultado_resto)  <span class="text-success"># Imprime el resto devuelto por la función dividir()</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, la función <b>'dividir(a, b)'</b> toma dos parámetros y
+      devuelve el cociente y el resto de la división. Al llamar a la función
+      <b>'dividir(10, 3)'</b>, se asignan los valores de retorno a las variables
+      <b>'resultado_cociente'</b> y <b>'resultado_resto'</b>, y luego se
+      imprimen.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Funciones con argumentos opcionales:</span>
+    </h2>
+    <p>
+      Puedes definir funciones con argumentos opcionales proporcionando valores
+      predeterminados para esos argumentos. De esta manera, al llamar a la
+      función, puedes omitir esos argumentos opcionales o proporcionar valores
+      diferentes si es necesario. <br>Ejemplo:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def saludar(nombre, saludo="Hola"):
+        print(saludo, nombre)
+    
+      saludar("Juan")  <span class="text-success"># Saludo predeterminado: Hola</span>
+      saludar("María", "¡Buenos días!")  <span class="text-success"># Saludo personalizado: ¡Buenos días!</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, la función <b>'saludar(nombre, saludo="Hola")'</b> tiene
+      un argumento opcional saludo con un valor predeterminado de "Hola". Al
+      llamar a la función <b>'saludar("Juan")'</b>, se utiliza el saludo
+      predeterminado. Al llamar a la función
+      <b>'saludar("María", "¡Buenos días!")'</b>, se proporciona un saludo
+      personalizado.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="mt-5 mb-4">
+      <span class="highlight-2">Funciones recursivas:</span>
+    </h2>
+    <p>
+      En Python, puedes definir funciones recursivas, que son funciones que se
+      llaman a sí mismas dentro de su propio cuerpo. Esto permite resolver
+      problemas que se pueden descomponer en subproblemas más pequeños. <br>Ejemplo:
+    </p>
+    <pre class="py-1 bg-dark text-start w-50 rounded-2 shadow">
+      <code class="bg-dark text-white p-0">
+      def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
+    
+      resultado = factorial(5)
+      print(resultado)  <span class="text-success"># Imprime el factorial de 5: 120</span>
+      </code>
+    </pre>
+    <p>
+      En este ejemplo, la función <b>'factorial(n)'</b> calcula el factorial de
+      un número utilizando recursividad. La función se llama a sí misma con un
+      número decreciente hasta que se alcanza el caso base (n = 0) y se devuelve
+      el resultado final.
+    </p>
+  </div>
+
+  <p class="mt-5 py-4">
+    <b
+      >💡 Las funciones en Python son una herramienta poderosa para organizar y
+      reutilizar el código. Puedes utilizar parámetros, valores de retorno,
+      argumentos opcionales y recursividad para crear funciones más flexibles y
+      capaces. Al utilizar funciones, puedes escribir un código más modular,
+      legible y mantenible.</b
+    >
+  </p>
+</article>
+
+{% endblock %}

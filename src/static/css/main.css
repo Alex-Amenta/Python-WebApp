@@ -1,0 +1,101 @@
+body {
+  --font-family-base: "Lato", sans-serif !important;
+}
+
+:root {
+  padding-top: 60px;
+  margin-top: 70px;
+}
+
+#img_python {
+  filter: drop-shadow(0px 2px 5px rgb(97, 118, 253));
+}
+
+.highlight-1 {
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(142, 155, 243, 0.813) 50%
+  );
+  background-size: 200% 40%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.highlight-2 {
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(249, 249, 81, 0.813) 50%
+  );
+  background-size: 200% 40%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.highlight-3 {
+  background-image: linear-gradient(to right, transparent 50%, #e07373 50%);
+  background-size: 200% 40%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.emoji-idea {
+  list-style-type: "📌";
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+code {
+  color: #333;
+  background: #d0d0d5;
+  font-size: 8rem;
+  padding: 5px 2px 5px;
+}
+
+.codigo {
+  color: rgb(16, 28, 110);
+  background-color: #dcdce0;
+  font-weight: bold;
+  padding: 2px 5px 2px 5px;
+}
+
+.print {
+  background-color: #333;
+  color: rgb(89, 216, 236);
+  padding: 5px 20px 5px 20px;
+}
+
+.hola_mundo {
+  color: rgb(53, 235, 56);
+}
+
+.op_container {
+  display: flex;
+}
+
+.op_lista {
+  flex: 1;
+}
+
+.op_container pre {
+  flex: 1;
+}
+
+#card-about {
+  background: rgb(238, 73, 73);
+  background: radial-gradient(
+    circle,
+    rgba(238, 73, 73, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: white;
+}

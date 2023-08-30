@@ -4,7 +4,6 @@ body {
 
 :root {
   padding-top: 60px;
-  margin-top: 70px;
 }
 
 #img_python {
@@ -98,4 +97,8 @@ code {
     rgba(148, 187, 233, 1) 100%
   );
   color: white;
+}
+
+footer section {
+  display: contents;
 }
